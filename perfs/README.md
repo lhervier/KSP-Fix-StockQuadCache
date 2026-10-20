@@ -31,4 +31,4 @@ BENCH calibration;quads=22;roundsPerQuad=8;verticesPerFormula=39600;stockNsPerVe
 
 This mod was also timed frame by frame, with the same save, against stock and against Terrain Precision
 Fix. Those runs are read together, so they are kept together:
-[with Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix/blob/main/perfs/README.md#what-a-frame-pays).
+[with Terrain Precision Fix](https://github.com/lhervier/KSP-TerrainPrecisionFix/blob/main/diag/common/perfs/README.md#what-a-frame-pays).

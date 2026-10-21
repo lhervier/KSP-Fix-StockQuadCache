@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
-    <AssemblyName>StockQuadCacheMod</AssemblyName>
-    <RootNamespace>com.github.lhervier.ksp.stockquadcache</RootNamespace>
+    <AssemblyName>KSPFixStockQuadCache</AssemblyName>
+    <RootNamespace>com.github.lhervier.ksp.fix.stockquadcache</RootNamespace>
     <Version>0.1.0</Version>
     <Description>Places terrain vertices with stock arithmetic, reading the two Transforms once per quad</Description>
     <!-- Straight into the folder that gets copied to the GameData of KSP. -->
-    <OutputPath>GameData\StockQuadCacheMod</OutputPath>
+    <OutputPath>GameData\KSPFixStockQuadCache</OutputPath>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <DebugType>none</DebugType>
   </PropertyGroup>

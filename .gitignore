@@ -1,5 +1,5 @@
 obj/
-GameData/StockQuadCacheMod/*.dll
+GameData/KSPFixStockQuadCache/*.dll
 GameData/**/*.zip
 CLAUDE.md
 __pycache__/

@@ -2,7 +2,7 @@ using System;
 using HarmonyLib;
 using UnityEngine;
 
-namespace com.github.lhervier.ksp.stockquadcache
+namespace com.github.lhervier.ksp.fix.stockquadcache
 {
     /// <summary>
     /// Places terrain vertices with stock's own arithmetic, reading the two Transforms it needs once per
@@ -21,9 +21,9 @@ namespace com.github.lhervier.ksp.stockquadcache
     /// Fix acts on: a comparison between the two is only worth something over the same quads.
     /// </summary>
     [KSPAddon(KSPAddon.Startup.Instantly, true)]
-    public class StockQuadCacheMod : MonoBehaviour
+    public class KSPFixStockQuadCache : MonoBehaviour
     {
-        private const string HarmonyId = "com.github.lhervier.ksp.stockquadcache";
+        private const string HarmonyId = "com.github.lhervier.ksp.fix.stockquadcache";
 
         // Set once the patches are in. Until then, and after a failed install, the patches stand aside and
         // the terrain is built by stock.
@@ -41,9 +41,9 @@ namespace com.github.lhervier.ksp.stockquadcache
             {
                 _buildQuad = AccessTools.FieldRefAccess<PQS, PQ>("buildQuad");
                 _vertexIndex = AccessTools.FieldRefAccess<PQS, int>("vertexIndex");
-                new Harmony(HarmonyId).PatchAll(typeof(StockQuadCacheMod).Assembly);
+                new Harmony(HarmonyId).PatchAll(typeof(KSPFixStockQuadCache).Assembly);
                 _active = true;
-                Log.Info($"Version {typeof(StockQuadCacheMod).Assembly.GetName().Version} installed,"
+                Log.Info($"Version {typeof(KSPFixStockQuadCache).Assembly.GetName().Version} installed,"
                     + $" log level {Log.Level}");
             }
             catch (Exception e)

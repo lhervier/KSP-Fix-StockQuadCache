@@ -1,7 +1,7 @@
 using System;
 using System.IO;
 
-namespace com.github.lhervier.ksp.stockquadcache
+namespace com.github.lhervier.ksp.fix.stockquadcache
 {
     /// <summary>How much the mod writes to KSP.log, from the quietest to the most talkative.</summary>
     internal enum LogLevel
@@ -19,7 +19,7 @@ namespace com.github.lhervier.ksp.stockquadcache
     /// </summary>
     internal static class Log
     {
-        private const string Prefix = "[StockQuadCache] ";
+        private const string Prefix = "[KSPFixStockQuadCache] ";
 
         private static LogLevel _level = LogLevel.Info;
 

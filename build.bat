@@ -1,6 +1,6 @@
 @echo off
-REM Compiles GameData\StockQuadCacheMod\StockQuadCacheMod.dll. Installing is up to you: copy the
-REM GameData\StockQuadCacheMod folder into the GameData of KSP.
+REM Compiles GameData\KSPFixStockQuadCache\KSPFixStockQuadCache.dll. Installing is up to you: copy the
+REM GameData\KSPFixStockQuadCache folder into the GameData of KSP.
 setlocal
 cd /d "%~dp0"
 
@@ -9,5 +9,5 @@ if not defined KSPDIR (
     exit /b 1
 )
 
-dotnet build StockQuadCacheMod.csproj -c Release -p:KSPDIR="%KSPDIR%"
+dotnet build KSPFixStockQuadCache.csproj -c Release -p:KSPDIR="%KSPDIR%"
 exit /b %errorlevel%
